@@ -1,0 +1,42 @@
+def add_function():
+    value1 = int(input('please add a number: '))
+    value2 = int(input('please add another number: '))
+    result = value1 + value2
+    print('the sum of the two numbers is', result)
+    return result
+
+def sub_function():
+    value3 = int(input('please subtract a number: '))
+    value4 = int(input('please subtract another number: '))
+    result = value3 - value4
+    print('the difference of the two numbers is', result)
+    return result
+
+def mul_function():
+    value5 = int(input('please multiply a number: '))
+    value6 = int(input('please multiply another number: '))
+    result = value5 * value6
+    print('the product of the two numbers is', result)
+    return result
+
+def division_function():
+    value7 = int(input('please divide a number: '))
+    value8 = int(input('please divide another number: '))
+    result = value7 / value8
+    print('the quotient of the two numbers is', result)
+    return result
+
+def main():
+    choice = int(input('type 1 to add, type 2 to subtract, type 3 to multiply, type 4 to divide: '))
+    if choice == 1:
+        add_function()
+    elif choice == 2:
+        sub_function()
+    elif choice == 3:
+        mul_function()
+    elif choice == 4:
+        division_function()
+    else:
+        print('invalid input')
+
+main()
